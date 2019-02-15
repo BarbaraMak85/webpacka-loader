@@ -1,0 +1,36 @@
+{
+    "name": "webpacka-loader",
+    "version": "1.0.0",
+    "description": "",
+    "main": "webpack.config.js",
+    "scripts": {
+        "start": "webpack",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/BarbaraMak85/webpacka-loader.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/BarbaraMak85/webpacka-loader/issues"
+    },
+    "homepage": "https://github.com/BarbaraMak85/webpacka-loader#readme",
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-loader": "^8.0.5",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "css-loader": "^2.1.0",
+        "react": "^16.8.2",
+        "react-dom": "^16.8.2",
+        "style-loader": "^0.23.1",
+        "webpack": "^4.29.3",
+        "webpack-cli": "^3.2.3"
+    },
+    "dependencies": {
+        "@babel/core": "^7.2.2",
+        "uuid": "^3.3.2"
+    }
+}
