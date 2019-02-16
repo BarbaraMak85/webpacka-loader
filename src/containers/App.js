@@ -1,12 +1,30 @@
 import React from 'react';
-import uuid from 'uuid';
 import style from './App.css';
+import uuid from 'uuid';
+import Title from '../components/Title';
 
 class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: []
+            data: [
+                {
+                    text: "one",
+                    id: 1
+                },
+                {
+                    text: "two",
+                    id: 2
+                },
+                {
+                    text: "three",
+                    id: 3
+                },
+                {
+                    text: "four",
+                    id: 4
+                }],
+            title: 'The webpack-loader task',
         };
     }
     addTodo(val) {
@@ -24,10 +42,11 @@ class App extends React.Component {
     render() {
         return (
             <div className={style.TodoApp}>
-                Tutaj pojawią się komponenty naszej aplikacji.
+                <Title title={this.state.title} numberOfTasks={this.state.data.length} />
             </div>
         );
     }
 }
+
 
 export default App;
